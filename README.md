@@ -1,6 +1,6 @@
 # Fetch - iOS Coding Exercise using Meal API
 
-## Solution Approach
+## Solution Approach
 
 - Perform networking using the two API endpoints mentioned
   
@@ -15,7 +15,7 @@
 - Added additional details in detail view like youtube link and recipe source link and load safari inside the app for those links.
   
 
-## Libraries used:
+## Libraries used:
 
 - While the UI for the project was built using SwiftUI, no other external libraries or tools were used to develop this project.
   
@@ -24,6 +24,6 @@
 - Xcode Version: Xcode 14.3 (latest)
   
 
-## How to run:
+## How to run:
 
 - Open the project using the latest Xcode and run the project.
