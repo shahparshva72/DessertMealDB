@@ -83,7 +83,7 @@ struct IngredientRow: View {
     
     var body: some View {
         HStack {
-            Text(ingredient.name)
+            Text(ingredient.name.capitalized)
                 .fontWeight(.semibold)
             Spacer()
             Text(ingredient.measure)

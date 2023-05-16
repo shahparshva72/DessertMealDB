@@ -8,7 +8,7 @@
 import SwiftUI
 
 class DessertViewModel: ObservableObject {
-    @Published var desserts: Meals?
+    @Published var desserts: MealsModel?
     @Published var error: Error?
     
     private let networkManager: NetworkManagerProtocol

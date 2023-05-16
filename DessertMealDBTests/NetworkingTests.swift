@@ -16,7 +16,7 @@ class NetworkingTests: XCTestCase {
         let mockNetworkManager = MockNetworkManager()
         let viewModel = DessertViewModel(networkManager: mockNetworkManager)
         
-        let expectedMeals = Meals(meals: [
+        let expectedMeals = MealsModel(meals: [
             Meal(strMeal: "Apam balik",
                  strMealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
                  idMeal: "53049"),

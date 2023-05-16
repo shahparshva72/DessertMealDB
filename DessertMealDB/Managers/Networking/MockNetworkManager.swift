@@ -14,7 +14,7 @@ class MockNetworkManager: NetworkManagerProtocol {
         return mockMealInfo
     }
     
-    func getMeals(for filterName: String) async throws -> Meals {
+    func getMeals(for filterName: String) async throws -> MealsModel {
         let mockMeals = [
             Meal(strMeal: "Apam balik",
                  strMealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
@@ -24,7 +24,7 @@ class MockNetworkManager: NetworkManagerProtocol {
                  idMeal: "52893")
         ]
         
-        return Meals(meals: mockMeals)
+        return MealsModel(meals: mockMeals)
     }
     
 }

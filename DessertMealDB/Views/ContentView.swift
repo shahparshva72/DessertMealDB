@@ -17,6 +17,8 @@ struct ContentView: View {
             if let meals = viewModel.desserts?.meals {
                 let filteredDesserts = meals.filter{ meal in
                     mealName.isEmpty || meal.strMeal.lowercased().contains(mealName.lowercased())
+                }.sorted {
+                    $0.strMeal.lowercased() < $1.strMeal.lowercased()
                 }
                 
                 List(filteredDesserts) { dessert in

@@ -11,7 +11,7 @@ class NetworkManager: NetworkManagerProtocol {
     
     static let shared = NetworkManager()
     
-    func getMeals(for filterName: String) async throws -> Meals {
+    func getMeals(for filterName: String) async throws -> MealsModel {
         
         let dessertURL = "https://themealdb.com/api/json/v1/1/filter.php?c=\(filterName)"
         
@@ -25,7 +25,7 @@ class NetworkManager: NetworkManagerProtocol {
             throw DMError.responseError
         }
         
-        guard let decodedData = try? JSONDecoder().decode(Meals.self, from: data) else {
+        guard let decodedData = try? JSONDecoder().decode(MealsModel.self, from: data) else {
             throw DMError.decodeError
         }
         

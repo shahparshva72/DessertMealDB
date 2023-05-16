@@ -8,6 +8,6 @@
 import Foundation
 
 protocol NetworkManagerProtocol {
-    func getMeals(for filterName: String) async throws -> Meals
+    func getMeals(for filterName: String) async throws -> MealsModel
     func getMealInformation(for meal_id: String) async throws -> MealDetailResponse
 }
